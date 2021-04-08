@@ -20,6 +20,12 @@ public class Application implements CommandLineRunner {
 
     @Autowired
     private ProductRepository productRepository;
+
+    @Autowired
+    private TodoRepository todoRepository;
+
+    @Autowired
+    private UserRepository userRepository;
     
     public static void main(String[] args) {
         SpringApplication.run(Application.class, args);
@@ -61,6 +67,7 @@ public class Application implements CommandLineRunner {
         	.forEach(System.out::println);
    
         System.out.println();
+
     }
 
 }
